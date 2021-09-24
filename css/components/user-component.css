@@ -1,0 +1,48 @@
+.user-component {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.user-component,
+.user-component__column:first-child {
+  display: flex;
+  align-items: center;
+}
+
+.user-component__avatar {
+  width: 56px;
+  height: 56px;
+  object-fit: cover;
+  border-radius: 35%;
+  margin-right: 1rem;
+}
+
+.user-component__avatar--xl {
+  width: 72px;
+  height: 72px;
+}
+
+.user-component__avatar--sm {
+  width: 40px;
+  height: 40px;
+}
+
+.user-component__title {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.user-component__title--400 {
+  font-weight: 400;
+}
+
+.user-component__subtitle {
+  margin-top: 0.75rem;
+  font-size: 1rem;
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.user-component__column:nth-child(2) {
+  color: rgba(0, 0, 0, 0.4);
+  font-size: 1rem;
+}
