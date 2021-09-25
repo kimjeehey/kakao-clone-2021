@@ -12,6 +12,16 @@
   margin-bottom: 1rem;
 }
 
+.main-screen .user-component {
+  padding: 1.5rem;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.main-screen .user-component:hover {
+  background-color: #f8f8f8;
+}
+
 .user-component__avatar {
   width: 56px;
   height: 56px;
