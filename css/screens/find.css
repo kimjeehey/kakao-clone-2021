@@ -1,0 +1,21 @@
+.find-icons {
+  padding: var(--horizontal-space) 0;
+  display: flex;
+  justify-content: space-around;
+  box-sizing: border-box;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.find-icons__icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  line-height: 1.2;
+}
+
+.find-icons__icon img {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 1rem;
+}

@@ -12,4 +12,14 @@
 
 .screen-header__icons span {
   margin-left: 1rem;
+  position: relative;
+}
+
+.screen-header__icons span .badge {
+  width: 6px;
+  height: 6px;
+  background-color: tomato;
+  position: absolute;
+  top: -16px;
+  right: -8px;
 }
