@@ -76,3 +76,29 @@
   font-size: 0.875rem;
   margin-bottom: 0.5rem;
 }
+
+.user-component__phone {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.user-component__phone .warning {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: 2px solid tomato;
+  color: tomato;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 0.5rem;
+  position: absolute;
+  bottom: 0;
+  right: -24px;
+}
+
+.user-component__phone .warning span {
+  font-size: 12px;
+}
