@@ -1,9 +1,13 @@
 .settings__setting {
-  margin: 0 var(--horizontal-space);
-  padding: var(--horizontal-space) 0;
+  padding: var(--horizontal-space);
   display: flex;
   justify-content: space-between;
   border-bottom: var(--light-border);
+  transition: all 0.1s ease;
+}
+
+.settings__setting:hover {
+  background-color: #f8f8f8;
 }
 
 .settings__setting:last-child {
