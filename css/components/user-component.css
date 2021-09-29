@@ -1,5 +1,7 @@
 .user-component {
   justify-content: space-between;
+  padding: 1rem var(--horizontal-space);
+  cursor: pointer;
 }
 
 .user-component,
@@ -7,10 +9,10 @@
   display: flex;
   align-items: center;
 }
-
+/* 
 .friends-screen__channel .user-component {
   margin-bottom: 1rem;
-}
+} */
 
 .main-screen .user-component {
   padding: 1.5rem;
@@ -18,6 +20,7 @@
   cursor: pointer;
 }
 
+.friends-screen .user-component:hover,
 .main-screen .user-component:hover {
   background-color: #f8f8f8;
 }

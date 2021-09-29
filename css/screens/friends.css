@@ -4,7 +4,7 @@
   justify-content: center;
   padding: 1rem;
   width: 100%;
-  background-color: #f8f8f8;
+  background-color: #fafafa;
   box-sizing: border-box;
   cursor: pointer;
 }
@@ -15,10 +15,6 @@
   color: #2e363e;
 }
 
-.friends-screen {
-  padding: var(--horizontal-space);
-}
-
 .friends-screen__channel {
   margin-top: 24px;
   border-top: var(--main-border);
@@ -26,6 +22,7 @@
 }
 
 .friends-screen__channel-header {
+  padding: 0 var(--horizontal-space);
   margin-bottom: 24px;
   display: flex;
   justify-content: space-between;
