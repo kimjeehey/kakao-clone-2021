@@ -24,6 +24,10 @@
   padding-top: 0;
 }
 
+.settings-list:last-child {
+  border-bottom: none;
+}
+
 .settings__setting-column {
   display: flex;
   align-items: center;
