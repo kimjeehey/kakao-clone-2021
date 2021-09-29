@@ -1,0 +1,34 @@
+.settings__setting {
+  margin: 0 var(--horizontal-space);
+  padding: var(--horizontal-space) 0;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: var(--light-border);
+}
+
+.settings__setting:last-child {
+  border-bottom: none;
+}
+
+.settings__setting span {
+  font-size: 1.125rem;
+  margin-left: 1.5rem;
+}
+
+.settings-list {
+  border-bottom: var(--main-border);
+  padding: var(--horizontal-space) 0;
+}
+
+.settings-list:first-child {
+  padding-top: 0;
+}
+
+.settings__setting-column {
+  display: flex;
+  align-items: center;
+}
+
+.settings__setting-column:nth-child(2) {
+  color: var(--grey-subtitle);
+}
