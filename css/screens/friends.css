@@ -15,10 +15,14 @@
   color: #2e363e;
 }
 
+.friends-screen .user-component:first-child {
+  margin-top: 1rem;
+}
+
 .friends-screen__channel {
-  margin-top: 24px;
+  margin-top: 1rem;
   border-top: var(--main-border);
-  padding-top: 16px;
+  padding-top: 1rem;
 }
 
 .friends-screen__channel-header {
@@ -28,5 +32,5 @@
   justify-content: space-between;
   font-size: 0.875rem;
   font-weight: 500;
-  color: rgba(0, 0, 0, 0.4);
+  color: var(--grey-subtitle);
 }

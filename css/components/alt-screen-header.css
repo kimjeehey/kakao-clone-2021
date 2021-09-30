@@ -6,13 +6,12 @@
   position: sticky;
   width: 100%;
   top: 0;
-  left: 0;
   box-sizing: border-box;
   background-color: white;
 }
 
 #chat-screen .alt-header {
-  background-color: rgb(255, 226, 209);
+  background-color: var(--yellow-90);
 }
 
 .alt-header__title {
@@ -31,5 +30,5 @@
 }
 
 .alt-header__cloumn:last-child img {
-  margin-left: 1rem;
+  margin-left: 1.5rem;
 }
