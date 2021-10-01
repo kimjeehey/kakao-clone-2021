@@ -45,21 +45,22 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  animation: hideSplashScreen 0.4s ease 2s forwards;
+  animation: hideSplashScreen 0.8s ease 2.4s forwards;
 }
 
 #splash-screen img {
   color: rgb(255, 121, 44);
-  animation: moveSplashImage 0.4s ease 0.4s both;
+  animation: moveSplashImage 2s ease 0.4s both;
 }
 
 @keyframes hideSplashScreen {
-  from {
+  0% {
     opacity: 1;
   }
-  to {
+  100% {
     opacity: 0;
     visibility: hidden;
+    transform: translateY(10%);
   }
 }
 
@@ -68,12 +69,20 @@
     opacity: 0;
     transform: scale(0.5);
   }
-  50% {
+  10% {
     opacity: 1;
     transform: scale(1.2) translateY(-8px);
   }
-  100% {
+  20% {
     opacity: 1;
     transform: scale(1) translateY(0px);
+  }
+  90% {
+    opacity: 1;
+    transform: scale(1) translateY(0px);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(0.5);
   }
 }
