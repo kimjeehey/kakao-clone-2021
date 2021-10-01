@@ -128,3 +128,7 @@
   border: none;
   background-color: var(--yellow-100);
 }
+
+.chat-second-screen .message-row-myself .message__bubble {
+  background-color: rgb(33, 180, 95);
+}
