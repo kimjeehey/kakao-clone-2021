@@ -109,3 +109,27 @@ h6 {
   font-weight: 300;
   margin-left: 0.25rem;
 }
+
+.open-post__column:hover .open-post__main-image-info img {
+  animation: heartBeat 0.8s ease infinite;
+  will-change: transform;
+  /* will change helps a brower accelate the pointed animation */
+}
+
+@keyframes heartBeat {
+  0% {
+    color: white;
+    transform: none;
+    opacity: 1;
+  }
+  50% {
+    color: tomato;
+    transform: scale(1.5);
+    opacity: 0.6;
+  }
+  100% {
+    color: white;
+    transform: none;
+    opacity: 1;
+  }
+}

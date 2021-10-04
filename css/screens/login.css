@@ -1,5 +1,5 @@
 .welcome-header {
-  margin: 64px 0;
+  margin: 120px 0 64px 0;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -36,12 +36,15 @@
 
 #login-form input[type="submit"] {
   margin-bottom: 16px;
-  background-color: var(--yellow);
+  /* background-color: var(--yellow-100); */
+  background-color: rgb(255, 121, 44);
+  color: white;
   cursor: pointer;
   border: none;
   padding: 16px 0;
   font-size: 1rem;
   border-radius: 4px;
+  width: 100%;
 }
 
 #login-form input::placeholder {
@@ -63,4 +66,56 @@
   color: inherit;
   font-size: 0.825rem;
   margin-top: 8px;
+}
+
+#splash-screen {
+  background-color: var(--yellow-100);
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: hideSplashScreen 0.8s ease 2.4s forwards;
+}
+
+#splash-screen img {
+  color: rgb(255, 121, 44);
+  animation: moveSplashImage 2s ease 0.4s both;
+}
+
+@keyframes hideSplashScreen {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10%);
+  }
+}
+
+@keyframes moveSplashImage {
+  0% {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  10% {
+    opacity: 1;
+    transform: scale(1.2) translateY(-8px);
+  }
+  20% {
+    opacity: 1;
+    transform: scale(1) translateY(0px);
+  }
+  90% {
+    opacity: 1;
+    transform: scale(1) translateY(0px);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(0.5);
+  }
 }
